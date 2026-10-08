@@ -1,0 +1,26 @@
+This distribution includes portions of python-hwpx by airmang (Dr. Wily).
+Project: https://github.com/airmang/python-hwpx
+Source revision: d685ec2b545ad7b59a7889640ba4e2a4c3485f5f
+License: Apache License 2.0 (full text: vendor/LICENSE-python-hwpx.txt)
+
+Included source modules:
+  src/hwpx/equation/authoring.py
+  src/hwpx/equation/eqedit.py
+  src/hwpx/equation/measure.py
+  src/hwpx/equation/tokens.py
+Included asset:
+  tests/fixtures/hancom_saved/equation_pmatrix.hwpx
+  distributed here as assets/equation_template.hwpx.
+
+Local changes in vendor/equation/authoring.py (2026-10-08):
+- Reject missing unbraced arguments.
+- Parse a single character for unbraced TeX arguments.
+- Handle common escaped spacing commands; refuse negative spacing.
+Other included source modules and the template were not modified.
+The upstream converter is experimental and only supports its documented subset.
+Font metrics are estimates, not a guarantee of pixel-identical Hancom output.
+
+Hancom primary references consulted:
+https://forum.developer.hancom.com/t/topic/2392
+https://help.hancom.com/hoffice_mac/2022/ko-KR/hwp/insert/equation/equation.htm
+https://help.hancom.com/hoffice_mac/2022/ko-KR/hwp/file/open/open(other).htm
